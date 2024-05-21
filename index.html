@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="Pet-the-Puppy">
+            <h1>Pet the Puppy</h1>
+        </div>
+  
+        <div class="Puppies">
+            <h1>Puppies</h1>
+        </div>
+
+        <div class="Pupgrades">
+            <h1>Pupgrades</h1>
+        </div>
+
+        <div class="clicker">
+            <h1>lorem</h1>
+        </div>
+
+        <div class="dogs"></div>
+
+        <div class="pupgrades"></div>
+
+    </div>
+
+    <style>
+    .container {  display: grid;
+        grid-template-columns: 1.4fr 0.8fr 0.8fr;
+        grid-template-rows: 0.3fr 2.4fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Pet-the-Puppy Puppies Pupgrades"
+          "clicker dogs pupgrades";
+          height: 100vh;
+      }
+      
+      .Pet-the-Puppy { 
+        grid-area: Pet-the-Puppy;
+        background-color: rgb(218, 192, 243);
+        text-align: center;
+    }
+      
+      .Puppies {
+         grid-area: Puppies;
+         background-color: rgb(211, 176, 244);
+        text-align: center;
+        }
+      
+      .Pupgrades { 
+        grid-area: Pupgrades; 
+        background-color: rgb(204, 162, 243);
+        text-align: center;
+    }
+      
+      .clicker { grid-area: clicker; }
+      
+      .dogs { grid-area: dogs; }
+      
+      .pupgrades { grid-area: pupgrades; }
+      
+
+
+     
+
+    
+</style>
+
+    
+</body>
+</html>
