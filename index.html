@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="container">
         <div class="Pet-the-Puppy">
             <h1>Pet the Puppy</h1>
@@ -21,57 +23,53 @@
         </div>
 
         <div class="clicker">
-            <h1>lorem</h1>
+            <h1 id="pointsTracker">0</h1>
+            <button onclick="increasePoints()"> 
+            <img src="/images/dogs/scenthound_dog (1).png" alt="ScentHound Dog" id="scentdog">
+            
+            </button>
+        </div>
+  
+        <script src="game.js"></script>
+
+        <div class="dogs">
+            <h3 id="golden">0</h3>
+            <button onclick="increasePoints()"> 
+            <img src="/images/dogs/golden_retriever_dog.png" alt="Golden Retriever" id="goldendog">
+            </button>
+
+            <h3 id="dalmatian">0</h3>
+            <button onclick="increasePoints()"> 
+            <img src="/images/dogs/dalmatian_dog.png" alt="Dalmatian" id="daldog">
+            </button>
+
+            <h3 id="boxer">0</h3>
+            <button onclick="increasePoints()"> 
+            <img src="/images/dogs/boxer_dog.png" alt="Boxer dog" id="boxerdog">
+            </button>
+
+            <h3 id="German">0</h3>
+            <button onclick="increasePoints()"> 
+            <img src="/images/dogs/german_shepherd_dog.png" alt="German Shepherd" id="germ">
+            </button>
+
+            <h3 id="Doberman">0</h3>
+            <button onclick="increasePoints()"> 
+            <img src="/images/dogs/doberman_dog.png" alt="Doberman" id="dober">
+            </button>
         </div>
 
-        <div class="dogs"></div>
-
-        <div class="pupgrades"></div>
+       <div class="pupgrades">
+        <h3 id="pats">0</h3>
+            <button onclick="increasePoints()"> 
+            <img src="/images/dogs/icons/pats.png" alt="Golden Retriever" id="patting">
+            
+            </button>
+       </div>
 
     </div>
 
-    <style>
-    .container {  display: grid;
-        grid-template-columns: 1.4fr 0.8fr 0.8fr;
-        grid-template-rows: 0.3fr 2.4fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "Pet-the-Puppy Puppies Pupgrades"
-          "clicker dogs pupgrades";
-          height: 100vh;
-      }
-      
-      .Pet-the-Puppy { 
-        grid-area: Pet-the-Puppy;
-        background-color: rgb(218, 192, 243);
-        text-align: center;
-    }
-      
-      .Puppies {
-         grid-area: Puppies;
-         background-color: rgb(211, 176, 244);
-        text-align: center;
-        }
-      
-      .Pupgrades { 
-        grid-area: Pupgrades; 
-        background-color: rgb(204, 162, 243);
-        text-align: center;
-    }
-      
-      .clicker { grid-area: clicker; }
-      
-      .dogs { grid-area: dogs; }
-      
-      .pupgrades { grid-area: pupgrades; }
-      
-
-
-     
-
-    
-</style>
+   
 
     
 </body>

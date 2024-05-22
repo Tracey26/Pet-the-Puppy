@@ -1,16 +1,34 @@
 .container {  display: grid;
-    grid-template-columns: 1.4fr 0.8fr 0.8fr;
-    grid-template-rows: 0.3fr 2.4fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Pet-the-Puppy Puppies Pupgrades"
-      ". . .";
+  grid-template-columns: 1.4fr 0.8fr 0.8fr;
+  grid-template-rows: 0.3fr 2.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Pet-the-Puppy Puppies Pupgrades"
+    "clicker dogs pupgrades";
+    height: 100vh;
+}
+
+.Pet-the-Puppy { 
+  grid-area: Pet-the-Puppy;
+  background-color: rgb(218, 192, 243);
+  text-align: center;
+}
+
+.Puppies {
+   grid-area: Puppies;
+   background-color: rgb(211, 176, 244);
+  text-align: center;
   }
-  
-  .Pet-the-Puppy { grid-area: Pet-the-Puppy; }
-  
-  .Puppies { grid-area: Puppies; }
-  
-  .Pupgrades { grid-area: Pupgrades; }
-  
+
+.Pupgrades { 
+  grid-area: Pupgrades; 
+  background-color: rgb(204, 162, 243);
+  text-align: center;
+}
+
+.clicker { grid-area: clicker; }
+
+.dogs { grid-area: dogs; }
+
+.pupgrades { grid-area: pupgrades; }
