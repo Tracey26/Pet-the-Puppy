@@ -32,3 +32,8 @@
 .dogs { grid-area: dogs; }
 
 .pupgrades { grid-area: pupgrades; }
+
+.center {
+  text-align: center;
+}
+
