@@ -10,23 +10,51 @@ let gs = 0
 let dm = 0
 let pointsTracker = document.getElementById("pointsTracker")
 let pupGcost = document.getElementById("pupGcost")
+let mediumBoost = document.getElementById("mediumBoost")
 
-function pupGcost() {
-    let cost = 10 + pts ** 1.5
+
+function buyPupG() {
+    let cost = 10 + sbs ** 1.5
     if (points >= cost) {
         points = points - cost
-
         pointsTracker.innerText = points.toFixed(2)
-        
-        pts = pts + 1
 
-        ptsAmount.innerText = pts + 'pts have'
+        sbs = sbs + 1
 
+        sbsAmount.innerText = sbs + 'SmallBoosts owned'
+        pupGcost.innerText = 10 + sbs ** 1.5
+
+        cost = 10 + sbs ** 1.5
+    }
+
+    else {
+        alert("not enough points")
 
     }
-    
-
 }
+
+function mediumBoost() {
+    let cost = 20 + mbs ** 1.5
+    if (points >= cost) {
+        points = points - cost
+        pointsTracker.innerText = points.toFixed(2)
+
+        mbs = mbs + 1
+
+        mbsAmount.innerText = mbs + 'Medium Boots owned'
+        pupGcost.innerText = 20 + mbs ** 1.5
+
+        cost = 20 + mbs ** 1.5
+    }
+
+    else {
+        alert("not enough points")
+
+    }
+}
+
+
+
 
 function increasePoints() {
     points = points + 1
