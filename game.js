@@ -10,7 +10,6 @@ let gs = 0
 let dm = 0
 let pointsTracker = document.getElementById("pointsTracker")
 let pupGcost = document.getElementById("pupGcost")
-let mediumBoost = document.getElementById("mediumBoost")
 
 
 function buyPupG() {
@@ -21,7 +20,8 @@ function buyPupG() {
 
         sbs = sbs + 1
 
-        sbsAmount.innerText = sbs + 'SmallBoosts owned'
+        sbsAmount.innerText = sbs + ' Small Boosts owned'
+        sbsCost.innerText = (10 + (sbs ** 1.5)).toFixed(0) + " Points"
         pupGcost.innerText = 10 + sbs ** 1.5
 
         cost = 10 + sbs ** 1.5
@@ -33,7 +33,7 @@ function buyPupG() {
     }
 }
 
-function mediumBoost() {
+function buyMbs() {
     let cost = 20 + mbs ** 1.5
     if (points >= cost) {
         points = points - cost
@@ -42,7 +42,8 @@ function mediumBoost() {
         mbs = mbs + 1
 
         mbsAmount.innerText = mbs + 'Medium Boots owned'
-        pupGcost.innerText = 20 + mbs ** 1.5
+        mbsCost.innerText = (20 + (mbs ** 1.5)).toFixed(0) + " Points"
+        buyMbs.innerText = 20 + mbs ** 1.5
 
         cost = 20 + mbs ** 1.5
     }
@@ -52,6 +53,147 @@ function mediumBoost() {
 
     }
 }
+
+function buySuper() {
+    let cost = 30 + sc ** 1.5
+    if (points >= cost) {
+        points = points - cost
+        pointsTracker.innerText = points.toFixed(2)
+
+        sc = sc + 1
+
+        scAmount.innerText = sc + 'Super chargers owned'
+        buySuper.innerText = 30 + sc ** 1.5
+
+        cost = 30 + sc ** 1.5
+    }
+
+    else {
+        alert("not enough points")
+
+    }
+}
+
+function buyChanger() {
+    let cost = 40 + gc ** 1.5
+    if (points >= cost) {
+        points = points - cost
+        pointsTracker.innerText = points.toFixed(2)
+
+        gc = gc + 1
+
+        gcAmount.innerText = gc + 'Game Changers owned'
+        buyChanger.innerText = 40 + gc ** 1.5
+
+        cost = 40 + gc ** 1.5
+    }
+
+    else {
+        alert("not enough points")
+
+    }
+}
+
+function goldenRet() {
+    let cost = 500 + gr ** 1.5
+    if (points >= cost) {
+        points = points - cost
+        pointsTracker.innerText = points.toFixed(2)
+
+        gr = gr + 1
+
+        grAmount.innerText = gr + 'Golden Retrievers owned'
+        goldenRet.innerText = 500 + gr ** 1.5
+
+        cost = 500 + gr ** 1.5
+    }
+
+    else {
+        alert("not enough points")
+
+    }
+}
+
+function dalmatian() {
+    let cost = 1000 + dl ** 1.5
+    if (points >= cost) {
+        points = points - cost
+        pointsTracker.innerText = points.toFixed(2)
+
+        dl = dl + 1
+
+        dlAmount.innerText = dl + 'Dalmatians owned'
+        dalmatian.innerText = 1000 + dl ** 1.5
+
+        cost = 1000 + dl ** 1.5
+    }
+
+    else {
+        alert("not enough points")
+
+    }
+}
+
+function boxerDog() {
+    let cost = 5000 + bd ** 1.5
+    if (points >= cost) {
+        points = points - cost
+        pointsTracker.innerText = points.toFixed(2)
+
+        bd = bd + 1
+
+        bdAmount.innerText = bd + 'Boxer Dog owned'
+        boxerDog.innerText = 5000 + bd ** 1.5
+
+        cost = 5000 + bd ** 1.5
+    }
+
+    else {
+        alert("not enough points")
+
+    }
+}
+
+function germanShep() {
+    let cost = 10000 + gs ** 1.5
+    if (points >= cost) {
+        points = points - cost
+        pointsTracker.innerText = points.toFixed(2)
+
+        gs = gs + 1
+
+        gsAmount.innerText = gs + 'German Shepard owned'
+        germanShep.innerText = 10000 + gs ** 1.5
+
+        cost = 10000 + gs ** 1.5
+    }
+
+    else {
+        alert("not enough points")
+
+    }
+}
+
+function doberMan() {
+    let cost = 50000 + dm ** 1.5
+    if (points >= cost) {
+        points = points - cost
+        pointsTracker.innerText = points.toFixed(2)
+
+        dm = dm + 1
+
+        dmAmount.innerText = dm + 'German Shepard owned'
+        doberMan.innerText = 50000 + dm ** 1.5
+
+        cost = 50000 + dm ** 1.5
+    }
+
+    else {
+        alert("not enough points")
+
+    }
+}
+
 
 
 
@@ -132,6 +274,17 @@ function gameLoop() {
     points = points + (0.6 * sc)
     points = points + (1.0 * gc)
     pointsTracker.innerText = points.toFixed(2)
+}
+
+let bgMusic = new Howl({
+    src: ['Caketown 1.mp3'],
+    autoplay: true,
+    loop: true,
+    volume: 0.3,
+})
+
+function muteMusic (){
+    bgMusic.pause()
 }
 
 function petPoints() {
