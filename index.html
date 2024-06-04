@@ -13,14 +13,17 @@
         <div class="Pet-the-Puppy">
             <h1>Pet the Puppy</h1>
         </div>
-  
-        <div class="Puppies">
-            <h1>Puppies</h1>
-        </div>
+
 
         <div class="Pupgrades">
             <h1>Pupgrades</h1>
         </div>
+
+        <div class="Puppies">
+            <h1>Puppies</h1>
+        </div>
+
+    
 
         <div class="clicker center">
             <h1 id="pointsTracker">0.00</h1>
@@ -32,56 +35,10 @@
         
         
 
-        <div class="dogs" >
+        <div class="pupgrades" >
+            
             <div class="flex-container">
-                <div><button onclick="goldenRet()"> 
-                <img src="/images/dogs/golden_retriever_dog.png" alt="Golden Retriever" >
-                </button></div>
-                <div><h3 id="grAmount">Amount Owned</h3>
-                <div><h3 id="grCost">Cost-500pts</h3></div>
-                <h4>Super Charger</h4></div>
-            </div>
-
-            <div class="flex-container">
-                <div><button onclick="dalmatian()"> 
-                <img src="/images/dogs/dalmatian_dog.png" alt="Dalmatian" >
-                </button></div>
-                <div><h3 id="dlAmount">Amount Owned</h3>
-                <div><h3 id="dlCost">Cost-1000pts</h3></div>
-                <h4>Mega Charger</h4></div>
-            </div>
-
-            <div class="flex-container">
-                <div><button onclick="boxerDog()"> 
-                <img src="/images/dogs/boxer_dog.png" alt="Boxer dog" >
-                </button></div>
-                <div><h3 id="bdAmount">Amount Owned</h3>
-                <div><h3 id="bdCost">Cost-5000pts</h3></div>
-                <h4>Ultra Charger</h4> </div>
-            </div>
-
-            <div class="flex-container">
-                <div><button onclick="germanShep()"> 
-                <img src="/images/dogs/german_shepherd_dog.png" alt="German Shepherd" >
-                </button> </div>
-                <div><h3 id="gsAmount">Amount Owned</h3>
-                <div><h3 id="gsCost">Cost-10000pts</h3></div>
-                <h4>Ultimate Pets</h4></div>
-            </div>
-
-            <div class="flex-container">
-            <div><button onclick="doberMan()"> 
-            <img src="/images/dogs/doberman_dog.png" alt="Doberman" >
-            </button></div>
-            <div><h3 id="dmAmount">Amount Owned</h3>
-            <div><h3 id="dmCost">Cost-50000 pts</h3></div>
-            <h4>Game Changer</h4></div>
-            </div>
-        </div>
-
-       <div class="pupgrades">
-            <div class="flex-container">
-                <div><button onclick="buyPupG()"> 
+                <div><button onclick="buyPupG()" id="smallBoostBtn"> 
                 <img src="/images/dogs/icons/pats.png" alt="Petting Icon"  height="71px">
                 </button></div>
                 <div><h3 id="sbsAmount">Amount Owned</h3>
@@ -117,10 +74,58 @@
             </div>
             
         </div>
-    </div>
-    
-
    
+
+
+
+       <div class="dogs">
+
+        <div class="flex-container">
+            <div><button onclick="goldenRet()"> 
+            <img src="/images/dogs/golden_retriever_dog.png" alt="Golden Retriever" >
+            </button></div>
+            <div><h3 id="grAmount">Amount Owned</h3>
+            <div><h3 id="grCost">Cost-500pts</h3></div>
+            <h4>Super Charger</h4></div>
+        </div>
+
+        <div class="flex-container">
+            <div><button onclick="dalmatian()"> 
+            <img src="/images/dogs/dalmatian_dog.png" alt="Dalmatian" >
+            </button></div>
+            <div><h3 id="dlAmount">Amount Owned</h3>
+            <div><h3 id="dlCost">Cost-1000pts</h3></div>
+            <h4>Mega Charger</h4></div>
+        </div>
+
+        <div class="flex-container">
+            <div><button onclick="boxerDog()"> 
+            <img src="/images/dogs/boxer_dog.png" alt="Boxer dog" >
+            </button></div>
+            <div><h3 id="bdAmount">Amount Owned</h3>
+            <div><h3 id="bdCost">Cost-5000pts</h3></div>
+            <h4>Ultra Charger</h4> </div>
+        </div>
+
+        <div class="flex-container">
+            <div><button onclick="germanShep()"> 
+            <img src="/images/dogs/german_shepherd_dog.png" alt="German Shepherd" >
+            </button> </div>
+            <div><h3 id="gsAmount">Amount Owned</h3>
+            <div><h3 id="gsCost">Cost-10000pts</h3></div>
+            <h4>Ultimate Pets</h4></div>
+        </div>
+
+        <div class="flex-container">
+        <div><button onclick="doberMan()"> 
+        <img src="/images/dogs/doberman_dog.png" alt="Doberman" >
+        </button></div>
+        <div><h3 id="dmAmount">Amount Owned</h3>
+        <div><h3 id="dmCost">Cost-50000 pts</h3></div>
+        <h4>Game Changer</h4></div>
+        </div>
+    </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
     <script src="game.js"></script>
 </body>

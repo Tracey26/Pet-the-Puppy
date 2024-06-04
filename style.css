@@ -4,8 +4,8 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "Pet-the-Puppy Puppies Pupgrades"
-    "clicker dogs pupgrades";
+    "Pet-the-Puppy  Pupgrades Puppies"
+    "clicker pupgrades dogs";
     height: 100vh;
 }
 
@@ -32,12 +32,16 @@
   padding-top: 100px;
 }
 
-.dogs { grid-area: dogs; }
+.dogs { 
+  grid-area: dogs;
+  text-align: center;
+ }
 
 .pupgrades { 
   grid-area: pupgrades;
   text-align: center;
 }
+
 
 .center {
   text-align: center;

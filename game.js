@@ -83,7 +83,7 @@ function buyChanger() {
 
         gc = gc + 1
 
-        gcAmount.innerText = gc + ' Extra Large Boost owned'
+        gcAmount.innerText = gc + ' XL Boost owned'
         gcCost.innerText = (40 + (gc ** 1.5)).toFixed(0) + " Points"
         buyChanger.innerText = 40 + gc ** 1.5
 
@@ -98,6 +98,7 @@ function buyChanger() {
 
 function goldenRet() {
     let cost = 500 + gr ** 1.5
+    console.log(points >= cost)
     if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(2)
@@ -240,13 +241,6 @@ function gameChanger() {
     pointsTracker.innerText = points.toFixed(2)
 }
 
-function goldenRet() {
-    points = points - 500
-    gr = gr + 1
-    console.log(points)
-    pointsTracker.innerText = points.toFixed(2)
-}
-
 function dalmatian() {
     points = points - 1000
     dl = dl + 1
@@ -286,6 +280,11 @@ function gameLoop() {
     points = points + (50.0 * gc)
     points = points + (100.0 * gc)
     pointsTracker.innerText = points.toFixed(2)
+    if (points < 10) {
+        smallBoostBtn.disabled = true
+    } else {
+        smallBoostBtn.disabled = false
+    }
 }
 
 let bgMusic = new Howl({
