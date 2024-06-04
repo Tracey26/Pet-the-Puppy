@@ -41,7 +41,7 @@ function buyMbs() {
 
         mbs = mbs + 1
 
-        mbsAmount.innerText = mbs + 'Medium Boots owned'
+        mbsAmount.innerText = mbs + ' Medium Boots owned'
         mbsCost.innerText = (20 + (mbs ** 1.5)).toFixed(0) + " Points"
         buyMbs.innerText = 20 + mbs ** 1.5
 
@@ -62,7 +62,8 @@ function buySuper() {
 
         sc = sc + 1
 
-        scAmount.innerText = sc + 'Super chargers owned'
+        scAmount.innerText = sc + ' Large Boost owned'
+        scCost.innerText = (30 + (sc ** 1.5)).toFixed(0) + " Points"
         buySuper.innerText = 30 + sc ** 1.5
 
         cost = 30 + sc ** 1.5
@@ -82,7 +83,8 @@ function buyChanger() {
 
         gc = gc + 1
 
-        gcAmount.innerText = gc + 'Game Changers owned'
+        gcAmount.innerText = gc + ' Extra Large Boost owned'
+        gcCost.innerText = (40 + (gc ** 1.5)).toFixed(0) + " Points"
         buyChanger.innerText = 40 + gc ** 1.5
 
         cost = 40 + gc ** 1.5
@@ -102,7 +104,8 @@ function goldenRet() {
 
         gr = gr + 1
 
-        grAmount.innerText = gr + 'Golden Retrievers owned'
+        grAmount.innerText = gr + ' Super Chargers owned'
+        grCost.innerText = (500 + (gr ** 1.5)).toFixed(0) + " Points"
         goldenRet.innerText = 500 + gr ** 1.5
 
         cost = 500 + gr ** 1.5
@@ -122,7 +125,8 @@ function dalmatian() {
 
         dl = dl + 1
 
-        dlAmount.innerText = dl + 'Dalmatians owned'
+        dlAmount.innerText = dl + ' Mega Chargers owned'
+        dlCost.innerText = (1000 + (dl ** 1.5)).toFixed(0) + " Points"
         dalmatian.innerText = 1000 + dl ** 1.5
 
         cost = 1000 + dl ** 1.5
@@ -142,7 +146,8 @@ function boxerDog() {
 
         bd = bd + 1
 
-        bdAmount.innerText = bd + 'Boxer Dog owned'
+        bdAmount.innerText = bd + ' Ultra Chargers owned'
+        bdCost.innerText = (5000 + (bd ** 1.5)).toFixed(0) + " Points"
         boxerDog.innerText = 5000 + bd ** 1.5
 
         cost = 5000 + bd ** 1.5
@@ -162,7 +167,8 @@ function germanShep() {
 
         gs = gs + 1
 
-        gsAmount.innerText = gs + 'German Shepard owned'
+        gsAmount.innerText = gs + ' Ultimate Chargers owned'
+        gsCost.innerText = (10000 + (gs ** 1.5)).toFixed(0) + " Points"
         germanShep.innerText = 10000 + gs ** 1.5
 
         cost = 10000 + gs ** 1.5
@@ -182,7 +188,8 @@ function doberMan() {
 
         dm = dm + 1
 
-        dmAmount.innerText = dm + 'German Shepard owned'
+        dmAmount.innerText = dm + ' Game Changers owned'
+        dmCost.innerText = (5000 + (dm ** 1.5)).toFixed(0) + " Points"
         doberMan.innerText = 50000 + dm ** 1.5
 
         cost = 50000 + dm ** 1.5
@@ -273,6 +280,11 @@ function gameLoop() {
     points = points + (0.4 * mbs)
     points = points + (0.6 * sc)
     points = points + (1.0 * gc)
+    points = points + (5.0 * gr)
+    points = points + (15. * mbs)
+    points = points + (30. * sc)
+    points = points + (50.0 * gc)
+    points = points + (100.0 * gc)
     pointsTracker.innerText = points.toFixed(2)
 }
 
