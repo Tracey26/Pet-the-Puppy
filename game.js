@@ -101,6 +101,7 @@ function goldenR() {
         grAmount.innerText = gr + ' Super Chargers owned'
         grCost.innerText = (500 + gr ** 2.5).toFixed(0) + " Points"
         goldenRet.innerText = 500 + gr ** 2.5
+        goldBark.play()
     }
 
     else {
@@ -120,6 +121,7 @@ function dalmat() {
         dlAmount.innerText = dl + ' Mega Chargers owned'
         dlCost.innerText = (1000 + dl ** 2.75).toFixed(0) + " Points"
         dalmatian.innerText = 1000 + dl ** 2.75
+        dalBark.play()
     }
     else {
         alert("not enough points")
@@ -138,6 +140,7 @@ function boxerBuy() {
         bdAmount.innerText = bd + ' Ultra Chargers owned'
         bdCost.innerText = (5000 + bd ** 3).toFixed(0) + " Points"
         boxerDog.innerText = 5000 + bd ** 3
+        boxBark.play()
 
     }
 
@@ -158,6 +161,7 @@ function germanbuy() {
         gsAmount.innerText = gs + ' Ultimate Chargers owned'
         gsCost.innerText = (10000 + gs ** 3.25).toFixed(0) + " Points"
         germanShep.innerText = 10000 + gs ** 3.25
+        germBark.play()
     }
 
     else {
@@ -247,8 +251,34 @@ let doberBark = new Howl({
     volume: 0.6,
 })
 
+let germBark = new Howl({
+    src: ['bark.mp3'],
+    volume: 0.6,
+})
+
+let boxBark = new Howl({
+    src: ['dog2.mp3'],
+    volume: 0.6,
+})
+
+let dalBark = new Howl({
+    src: ['dogbark2.mp3'],
+    volume: 0.6,
+})
+
+let goldBark = new Howl({
+    src: ['golden.mp3'],
+    volume: 0.6,
+})
+
+let mute = new Howl({
+    src: ['mute.wav'],
+    volume: 0.5,
+})
+
 function muteMusic (){
     bgMusic.pause()
+    mute.play()
 }
 
 function petPoints() {
