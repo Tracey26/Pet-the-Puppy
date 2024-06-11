@@ -18,12 +18,13 @@ let dlCost = document.getElementById("dlCost")
 let bdCost = document.getElementById("bdCost")
 let gsCost = document.getElementById("gsCost")
 let dmCost = document.getElementById("dmCost")
+let buyMbs = document.getElementById("buyMbs")
 
 
 
 function buyPupG() {
-    let cost = (10 + sbs ** 1.5).toFixed(0)
-    if (points.toFixed(0)>= cost) {
+    let cost = (10 + sbs ** 1.5)
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
         sbs = sbs + 1
@@ -38,14 +39,14 @@ function buyPupG() {
 }
 
 function buyMed() {
-    let cost = 20 + mbs ** 1.75
-    if (points.toFixed >= cost) {
+    let cost = (20 + mbs ** 1.75)
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
         mbs = mbs + 1
         mbsAmount.innerText = mbs + ' Medium Boots owned'
         mbsCost.innerText = (20 + mbs ** 1.75).toFixed(0) + " Points"
-        buyMbs.innerText = 20 + mbs ** 1.75
+        buyMbs.innerText = (20 + mbs ** 1.75)
     }
 
     else{
@@ -55,8 +56,8 @@ function buyMed() {
 }
 
 function buySup() {
-    let cost = 30 + sc ** 2
-    if (points.toFixed >= cost) {
+    let cost = (30 + sc ** 2)
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
         sc = sc + 1
@@ -71,8 +72,8 @@ function buySup() {
 }
 
 function buyChange() {
-    let cost = 40 + gc ** 2.25
-    if (points.toFixed >= cost) {
+    let cost = (40 + gc ** 2.25)
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
 
@@ -90,9 +91,9 @@ function buyChange() {
 }
 
 function goldenR() {
-    let cost = 500 + gr ** 2.5
+    let cost = (500 + gr ** 2.5)
     console.log(points >= cost)
-    if (points.toFixed >= cost) {
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
 
@@ -111,8 +112,8 @@ function goldenR() {
 }
 
 function dalmat() {
-    let cost = 1000 + dl ** 2.75
-    if (points.toFixed >= cost) {
+    let cost =(1000 + dl ** 2.75)
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
 
@@ -120,18 +121,16 @@ function dalmat() {
 
         dlAmount.innerText = dl + ' Mega Chargers owned'
         dlCost.innerText = (1000 + dl ** 2.75).toFixed(0) + " Points"
-        dalmatian.innerText = 1000 + dl ** 2.75
+        dalmatian.innerText = (1000 + dl ** 2.75)
         dalBark.play()
     }
-    else {
-        alert("not enough points")
 
-    }
+
 }
 
 function boxerBuy() {
-    let cost = 5000 + bd ** 3
-    if (points.toFixed >= cost) {
+    let cost = (5000 + bd ** 3)
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
 
@@ -151,8 +150,8 @@ function boxerBuy() {
 }
 
 function germanbuy() {
-    let cost = 10000 + gs ** 3.25
-    if (points.toFixed >= cost) {
+    let cost = (10000 + gs ** 3.25)
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
 
@@ -171,8 +170,8 @@ function germanbuy() {
 }
 
 function doberManBuy() {
-    let cost = 50000 + dm ** 5
-    if (points.toFixed >= cost) {
+    let cost = (50000 + dm ** 5)
+    if (points >= cost) {
         points = points - cost
         pointsTracker.innerText = points.toFixed(0)
 
