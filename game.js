@@ -26,10 +26,10 @@ function buyPupG() {
     let cost = (10 + sbs ** 1.5)
     if (points >= cost) {
         points = points - cost
-        pointsTracker.innerText = points.toFixed(0)
+        pointsTracker.innerText = points.toFixed(2)
         sbs = sbs + 1
         sbsAmount.innerText = sbs + ' Small Boosts owned'
-        sbsCost.innerText = (10 + sbs ** 1.5).toFixed(0) + " Points"
+        sbsCost.innerText = (10 + sbs ** 1.5).toFixed(2) + " Points"
     }
 
     else {
@@ -42,10 +42,10 @@ function buyMed() {
     let cost = (20 + mbs ** 1.75)
     if (points >= cost) {
         points = points - cost
-        pointsTracker.innerText = points.toFixed(0)
+        pointsTracker.innerText = points.toFixed(2)
         mbs = mbs + 1
         mbsAmount.innerText = mbs + ' Medium Boots owned'
-        mbsCost.innerText = (20 + mbs ** 1.75).toFixed(0) + " Points"
+        mbsCost.innerText = (20 + mbs ** 1.75).toFixed(2) + " Points"
         buyMbs.innerText = (20 + mbs ** 1.75)
     }
 
@@ -59,10 +59,10 @@ function buySup() {
     let cost = (30 + sc ** 2)
     if (points >= cost) {
         points = points - cost
-        pointsTracker.innerText = points.toFixed(0)
+        pointsTracker.innerText = points.toFixed(2)
         sc = sc + 1
         scAmount.innerText = sc + ' Large Boost owned'
-        scCost.innerText = (30 + sc ** 2).toFixed(0) + " Points"
+        scCost.innerText = (30 + sc ** 2).toFixed(2) + " Points"
         buySuper.innerText = 30 + sc ** 2
     }
     else {
@@ -75,12 +75,12 @@ function buyChange() {
     let cost = (40 + gc ** 2.25)
     if (points >= cost) {
         points = points - cost
-        pointsTracker.innerText = points.toFixed(0)
+        pointsTracker.innerText = points.toFixed(2)
 
         gc = gc + 1
 
         gcAmount.innerText = gc + ' XL Boost owned'
-        gcCost.innerText = (40 + gc ** 2.25).toFixed(0) + " Points"
+        gcCost.innerText = (40 + gc ** 2.25).toFixed(2) + " Points"
         buyChanger.innerText = 40 + gc ** 2.25
     }
 
@@ -95,12 +95,12 @@ function goldenR() {
     console.log(points >= cost)
     if (points >= cost) {
         points = points - cost
-        pointsTracker.innerText = points.toFixed(0)
+        pointsTracker.innerText = points.toFixed(2)
 
         gr = gr + 1
 
         grAmount.innerText = gr + ' Super Chargers owned'
-        grCost.innerText = (500 + gr ** 2.5).toFixed(0) + " Points"
+        grCost.innerText = (500 + gr ** 2.5).toFixed(2) + " Points"
         goldenRet.innerText = 500 + gr ** 2.5
         goldBark.play()
     }
@@ -115,12 +115,12 @@ function dalmat() {
     let cost =(1000 + dl ** 2.75)
     if (points >= cost) {
         points = points - cost
-        pointsTracker.innerText = points.toFixed(0)
+        pointsTracker.innerText = points.toFixed(2)
 
         dl = dl + 1
 
         dlAmount.innerText = dl + ' Mega Chargers owned'
-        dlCost.innerText = (1000 + dl ** 2.75).toFixed(0) + " Points"
+        dlCost.innerText = (1000 + dl ** 2.75).toFixed(2) + " Points"
         dalmatian.innerText = (1000 + dl ** 2.75)
         dalBark.play()
     }
@@ -132,12 +132,12 @@ function boxerBuy() {
     let cost = (5000 + bd ** 3)
     if (points >= cost) {
         points = points - cost
-        pointsTracker.innerText = points.toFixed(0)
+        pointsTracker.innerText = points.toFixed(2)
 
         bd = bd + 1
 
         bdAmount.innerText = bd + ' Ultra Chargers owned'
-        bdCost.innerText = (5000 + bd ** 3).toFixed(0) + " Points"
+        bdCost.innerText = (5000 + bd ** 3).toFixed(2) + " Points"
         boxerDog.innerText = 5000 + bd ** 3
         boxBark.play()
 
@@ -153,12 +153,12 @@ function germanbuy() {
     let cost = (10000 + gs ** 3.25)
     if (points >= cost) {
         points = points - cost
-        pointsTracker.innerText = points.toFixed(0)
+        pointsTracker.innerText = points.toFixed(2)
 
         gs = gs + 1
 
         gsAmount.innerText = gs + ' Ultimate Chargers owned'
-        gsCost.innerText = (10000 + gs ** 3.25).toFixed(0) + " Points"
+        gsCost.innerText = (10000 + gs ** 3.25).toFixed(2) + " Points"
         germanShep.innerText = 10000 + gs ** 3.25
         germBark.play()
     }
